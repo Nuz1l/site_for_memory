@@ -1,0 +1,101 @@
+/* Основные стили */
+body {
+    background-color: #333; /* Темный фон */
+    color: #00ffcc; /* Цвет текста */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #555; /* Серый цвет для header */
+    text-align: center;
+    padding: 20px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #555; /* Серый цвет для footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h2 {
+    color: #00ffcc; /* Цвет заголовков */
+}
+
+/* Стили для участников */
+.participants {
+    margin-bottom: 30px;
+}
+
+.participant p {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.participant a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+/* Медиатека */
+.upload {
+    margin-bottom: 20px;
+}
+
+.upload input[type="file"] {
+    margin-right: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img, .gallery video {
+    margin: 10px;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
